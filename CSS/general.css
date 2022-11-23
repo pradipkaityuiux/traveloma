@@ -1,0 +1,96 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;  /* Does not work in Safari and Microsoft edge */
+}
+body{
+    line-height: 1;
+    font-weight: 400;
+    overflow-x: hidden;
+    text-decoration: none;   
+    list-style: none;
+    font-family: 'Montserrat',sans-serif;
+    /* font-family: serif; */
+}
+
+.f-container{
+    display: flex;
+    align-items: center;
+}
+.flex-container-between{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.grid{
+    display: grid;
+    row-gap: 9.6rem;
+    column-gap: 5.6rem;
+}
+.grid-light{
+    display: grid;
+    row-gap: 4rem;
+    column-gap: 2.4em;
+}
+.grid-3-cols{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.grid-2-cols{
+    grid-template-columns: repeat(2,1fr);
+}
+.container{
+    max-width: 120rem;
+    padding: 0 3.2rem;
+    margin: 0 auto;
+}
+
+.heading-secondary{
+    font-size: 4.2rem;
+    line-height: 1.2;
+    margin-bottom: 9.6rem;
+    color: #1A1B1E;
+}
+.subheading{
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color:#E69C37;
+    text-transform: uppercase;
+    margin-bottom: 1.6rem;
+    letter-spacing: 0.75px;
+}
+.heading-tertiary{
+    font-size: 3.2rem;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+    margin-top: 0.8rem;
+    color: #2A3E51;
+}
+/* 1A1B1E --- Dark Blue
+E69C37 ---  Yellow
+0F6CC2  --- Blue Light
+2A3E51  --- Fade Dark
+FCF7E3  ----  Light Background 
+#dddddd  --- Text Color
+#ecf4fc --- Background Light Blue
+*/
+.text-center{
+    text-align: center;
+}
+
+.sticky .bottom-header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.12);
+}
+
+.sticky .section-hero{
+    margin-top: 6.6rem;
+}

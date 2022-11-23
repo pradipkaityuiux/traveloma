@@ -1,0 +1,14 @@
+{
+    "icons": [
+        {
+            "src": "Favicon/TravelomaFav.png",
+            "type": "image/png",
+            "sizes": "192*192"
+        },
+        {
+            "src": "Favicon/TravelomaFav.png",
+            "type": "image/png",
+            "sizes": "512*512"
+        }
+    ]
+}

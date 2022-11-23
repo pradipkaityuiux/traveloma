@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="Favicon/TravelomaFav.png">
+    <link rel="apple-touch-icon" href="Favicon/TravelomaFav.png">
+    <link rel="manifest" href="manifest.webmanifest">
+
+    <link rel="stylesheet" href="CSS/general.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/queries.css">
+    <link rel="manifest" href="manifest.webmanifest">
+    <meta name="description"
+        content="Traveloma is a website that helps in booking tickets of International Travel and Tourism places and we tae care of your whole journey.">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800&family=Josefin+Slab:wght@500;600;700&family=Montserrat:wght@300;400;500;600;700;800;900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Rubik:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&display=swap');
+    </style>
+    <title>Traveloma &mdash; Explore the Unknown</title>
+</head>
+
+<body>
+    <header class="top-header">
+        <div class="contact-icons">
+            <a href="tel:+919455412131" class="contact contact-mobile">
+                <img src="Images/Call.png" alt="btn-mobile-nav" class="mobile-img">
+                <span class="contact-text">+91 945-541-2131</span>
+            </a>
+            <a href="mailto:info@traveloma.com" class="contact contact-email">
+                <img src="Images/Email.png" alt="btn-mobile-nav" class="email-img">
+                <span class="contact-text">info@traveloma.com</span>
+            </a>
+        </div>
+        <div class="social-media">
+            <a href="#"><img src="Images/Social Media (3).png" alt=""></a>
+            <a href="#"><img src="Images/Social Media (4).png" alt=""></a>
+            <a href="#"><img src="Images/Social Media (1).png" alt=""></a>
+            <a href="#"><img src="Images/Social Media (2).png" alt=""></a>
+        </div>
+    </header>
+
+    <header class="bottom-header flex-container-between">
+        <div class="logo-container">
+            <a href="#"><img src="Images/Traveloma Logo.png" alt="Traveloma Logo" class="logo"></a>
+        </div>
+        <div class="main-navigation flex-container-between">
+            <ul class="navigation-links f-container">
+                <li class="links"><a href="#pacage">Popular</a></li>
+                <li class="links"><a href="#whywe">Why&nbsp;We</a></li>
+                <li class="links"><a href="#testimonials">Testimonials</a></li>
+                <li class="links"><a href="#blogs">Blog</a></li>
+                <li class="links"><a href="#cta">Newsletter</a></li>
+            </ul>
+            <button class="contact-cta" onclick="openModal()"><a href="###">Contact</a></button>
+        </div>
+        <i class="fa fa-bars menu-icon" onclick="openMenu()"></i>
+    </header>
+
+    <section class="section-hero">
+        <div class="img-wraper">
+            <img src="Images/Hero Image.png" alt="">
+        </div>
+        <div class="banner">
+            <h1 class="main-heading top-heading">Life's better with</h1>
+            <h1 class="main-heading backpack">a backpack</h1>
+        </div>
+        <div class="cta">
+            <div class="destination-container f-container">
+                <input type="text" placeholder="Destination">
+                <ion-icon name="location-outline" class="destIcon"></ion-icon>
+            </div>
+            <div class="travel-date-container f-container">
+                <input type="text" placeholder="Travel date">
+                <ion-icon name="calendar-outline" class="dateIcon"></ion-icon>
+            </div>
+            <button class="find-now">Find Now</button>
+        </div>
+    </section>
+
+    <section class="section-package" id="pacage">
+        <div class="text-center container hidden">
+            <p class="subheading">Choose Package</p>
+            <h2 class="heading-secondary">Choose the best package for your Travel</h2>
+        </div>
+        <div class="container grid grid-3-cols">
+            <div class="container-package hidden">
+                <img src="Images/first Mask group.png" alt="">
+                <div class="back">
+                    <h3 class="heading-main">National&nbsp;Capitol&nbsp;of&nbsp;Cuba </h3>
+                    <div class="f-container">
+                        <ion-icon name="location-sharp" class="location-icon"></ion-icon>
+                        <p class="description">Cuba</p>
+                    </div>
+                    <p class="price">$49.59 <span class="month">/Person</span></p>
+                </div>
+                <button class="book">Book Now</button>
+                <div class="duration-container f-container">
+                    <ion-icon name="time-outline" class="duration-icon"></ion-icon>
+                    <p class="duration">4 days 5 nights</p>
+                </div>
+            </div>
+
+            <div class="container-package hidden">
+                <img src="Images/Mask group-1.png" alt="">
+                <div class="back">
+                    <h3 class="heading-main">Yellowstone&nbsp;National&nbsp;Park</h3>
+                    <div class="f-container">
+                        <ion-icon name="location-sharp" class="location-icon"></ion-icon>
+                        <p class="description">Yellowstone</p>
+                    </div>
+                    <p class="price">$59.59 <span class="month">/Person</span></p>
+                </div>
+                <button class="book">Book Now</button>
+                <div class="duration-container f-container">
+                    <ion-icon name="time-outline" class="duration-icon"></ion-icon>
+                    <p class="duration">3 days 4 nights</p>
+                </div>
+            </div>
+
+            <div class="container-package hidden">
+                <img src="Images/Mask group-2.png" alt="">
+                <div class="back">
+                    <h3 class="heading-main">Sedona&nbsp;Red&nbsp;Rock&nbsp;Country</h3>
+                    <div class="f-container">
+                        <ion-icon name="location-sharp" class="location-icon"></ion-icon>
+                        <p class="description">Arizona</p>
+                    </div>
+                    <p class="price">$49.59 <span class="month">/Person</span></p>
+                </div>
+                <button class="book">Book Now</button>
+                <div class="duration-container f-container">
+                    <ion-icon name="time-outline" class="duration-icon"></ion-icon>
+                    <p class="duration">4 days 5 nights</p>
+                </div>
+            </div>
+
+            <div class="container-package hidden">
+                <img src="Images/Bridge (1).png" alt="">
+                <div class="back">
+                    <h3 class="heading-main">Golden&nbsp;Gate&nbsp;Bridge&nbsp;</h3>
+                    <div class="f-container">
+                        <ion-icon name="location-sharp" class="location-icon"></ion-icon>
+                        <p class="description">San Francisco</p>
+                    </div>
+                    <p class="price">$69.59 <span class="month">/Person</span></p>
+                </div>
+                <button class="book">Book Now</button>
+                <div class="duration-container f-container">
+                    <ion-icon name="time-outline" class="duration-icon"></ion-icon>
+                    <p class="duration">2 days 3 nights</p>
+                </div>
+            </div>
+
+            <div class="container-package hidden">
+                <img src="Images/Mask group-4.png" alt="">
+                <div class="back">
+                    <h3 class="heading-main">Joshua&nbsp;Tree&nbsp;National&nbsp;Park</h3>
+                    <div class="f-container">
+                        <ion-icon name="location-sharp" class="location-icon"></ion-icon>
+                        <p class="description">California</p>
+                    </div>
+                    <p class="price">$69.59 <span class="month">/Person</span></p>
+                </div>
+                <button class="book">Book Now</button>
+                <div class="duration-container f-container">
+                    <ion-icon name="time-outline" class="duration-icon"></ion-icon>
+                    <p class="duration">3 days 4 nights</p>
+                </div>
+            </div>
+
+            <div class="container-package hidden">
+                <img src="Images/Bridge (2).png" alt="">
+                <div class="back">
+                    <h3 class="heading-main">Crater&nbsp;Lake&nbsp;National&nbsp;Park</h3>
+                    <div class="f-container">
+                        <ion-icon name="location-sharp" class="location-icon"></ion-icon>
+                        <p class="description">Oregon</p>
+                    </div>
+                    <p class="price">$59.59 <span class="month">/Person</span></p>
+                </div>
+                <button class="book">Book Now</button>
+                <div class="duration-container f-container">
+                    <ion-icon name="time-outline" class="duration-icon"></ion-icon>
+                    <p class="duration">4 days 5 nights</p>
+                </div>
+            </div>
+        </div>
+        <p class="view-all">View All</p>
+    </section>
+
+    <section class="why-we" id="whywe">
+        <div class="container text-center hidden">
+            <p class="subheading">Why we exist</p>
+            <h2 class="heading-secondary">The best services we provide</h2>
+        </div>
+        <div class="services container grid-3-cols">
+            <div class="service service-first hidden">
+                <img src="Images/Services (1).png" alt="" class="services-img">
+                <div class="services-container">
+                    <h3 class="heading-tertiary">We care</h3>
+                    <p class="description-paragraph">You will get all the necessary equipments, foods, and accomodation
+                        facilities with us.</p>
+                </div>
+            </div>
+            <div class="service service-second hidden">
+                <img src="Images/Services (2).png" alt="" class="services-img">
+                <div class="services-container">
+                    <h3 class="heading-tertiary">Our Experience</h3>
+                    <p class="description-paragraph">You will travel with a agency having 10 years of experience in
+                        tourism industry.</p>
+                </div>
+            </div>
+            <div class="service service-third hidden">
+                <img src="Images/Services (3).png" alt="" class="services-img">
+                <div class="services-container">
+                    <h3 class="heading-tertiary">Affordable cost</h3>
+                    <p class="description-paragraph">Your pocket will not be empty, still you can travel the world in
+                        very nominal cost. get ready to explore.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-testimonials" id="testimonials">
+        <div class="container text-center hidden">
+            <p class="subheading">Testimonials</p>
+            <h2 class="heading-secondary">What our travellers say about us</h2>
+        </div>
+        <div class="testimonial-container">
+            <div class="container grid grid-2-cols">
+                <div class="card-testimonial hidden" data-tilt>
+                    <div class="user-section f-container">
+                        <img src="Images/Avatar.png" alt="" class="user-img">
+                        <div class="user-details">
+                            <p class="user-name">Danial&nbsp;Rins</p>
+                            <div class="user-location f-container">
+                                <ion-icon name="location-outline" class="destIcon"></ion-icon>
+                                <p class="location-name">Portugal</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="user-testimonial-para">We got the best travelling experience and explore the world with
+                        just $299 recently and they provide all the necessary stuffs you required. You will feel safe
+                        with this company.</p>
+                    <div class="verified">Verified</div>
+                </div>
+
+                <div class="card-testimonial hidden" data-tilt>
+                    <div class="user-section f-container">
+                        <img src="Images/Avatar (2).png" alt="" class="user-img">
+                        <div class="user-details">
+                            <p class="user-name">Danial&nbsp;Rins</p>
+                            <div class="user-location f-container">
+                                <ion-icon name="location-outline" class="destIcon"></ion-icon>
+                                <p class="location-name">Portugal</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="user-testimonial-para">They provide services to both the tourists and the travelers. These
+                        agencies help tourists in planning their trip, arranging their itineraries and booking hotels
+                        and flights.</p>
+                    <div class="verified">Verified</div>
+                </div>
+
+                <div class="card-testimonial hidden" data-tilt>
+                    <div class="user-section f-container">
+                        <img src="Images/Avatar (3).png" alt="" class="user-img">
+                        <div class="user-details">
+                            <p class="user-name">Jenny&nbsp;Wilson</p>
+                            <div class="user-location f-container">
+                                <ion-icon name="location-outline" class="destIcon"></ion-icon>
+                                <p class="location-name">Portugal</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="user-testimonial-para">It provides services like travel packages for business travelers,
+                        customized packages for couples and families, honeymoon packages that include romantic getaways,
+                        adventure trips for singles. </p>
+                    <div class="verified">Verified</div>
+                </div>
+
+                <div class="card-testimonial hidden" data-tilt>
+                    <div class="user-section f-container">
+                        <img src="Images/Avatar (4).png" alt="" class="user-img">
+                        <div class="user-details">
+                            <p class="user-name">Ronald&nbsp;Richards</p>
+                            <div class="user-location f-container">
+                                <ion-icon name="location-outline" class="destIcon"></ion-icon>
+                                <p class="location-name">Portugal</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="user-testimonial-para">The best tourism agency for their ability to provide excellent
+                        customer service with a personal touch. They create personalized experiences for each individual
+                        and are not afraid of going out of their way for the sake of customer satisfaction.</p>
+                    <div class="verified">Verified</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-newsBlogs" id="blogs">
+        <div class="container text-center hidden">
+            <p class="subheading">News and Blogs</p>
+            <h2 class="heading-secondary">Stay updated with our blog posts</h2>
+        </div>
+
+        <div class="newsBlog container grid-light grid-3-cols">
+            <div class="blog-container hidden">
+                <img src="Images/Rectangle 38.png" class="blog-image" alt="">
+                <h3 class="blog-title">9 Essential Tips For travelling in mountain areas</h3>
+                <div class="blog-details f-container">
+                    <div class="blog-publish f-container">
+                        <ion-icon name="calendar-outline" class="blog-calender"></ion-icon>
+                        <p class="blog-date">February 28, 2018</p>
+                    </div>
+                    <div class="blog-comment f-container">
+                        <ion-icon name="chatbubble-ellipses" class="post-comment"></ion-icon>
+                        <p class="comment-no">3</p>
+                    </div>
+                </div>
+            </div>
+            <div class="blog-container hidden">
+                <img src="Images/Rectangle 39.png" class="blog-image" alt="">
+                <h3 class="blog-title">5 Problems With Travel and How to Combat Them</h3>
+                <div class="blog-details f-container">
+                    <div class="blog-publish f-container">
+                        <ion-icon name="calendar-outline" class="blog-calender"></ion-icon>
+                        <p class="blog-date">Feb 28, 2018</p>
+                    </div>
+                    <div class="blog-comment f-container">
+                        <ion-icon name="chatbubble-ellipses" class="post-comment"></ion-icon>
+                        <p class="comment-no">3</p>
+                    </div>
+                </div>
+            </div>
+            <div class="blog-container hidden">
+                <img src="Images/Rectangle 40.png" class="blog-image" alt="">
+                <h3 class="blog-title">How to Reach VFS Global Using Delhi Metro</h3>
+                <div class="blog-details f-container">
+                    <div class="blog-publish f-container">
+                        <ion-icon name="calendar-outline" class="blog-calender"></ion-icon>
+                        <p class="blog-date">Mar 12, 2018</p>
+                    </div>
+                    <div class="blog-comment f-container">
+                        <ion-icon name="chatbubble-ellipses" class="post-comment"></ion-icon>
+                        <p class="comment-no">5</p>
+                    </div>
+                </div>
+            </div>
+            <div class="blog-container hidden">
+                <img src="Images/Rectangle 42.png" class="blog-image" alt="">
+                <h3 class="blog-title">Memorable experience in Cordelia Cruise India</h3>
+                <div class="blog-details f-container">
+                    <div class="blog-publish f-container">
+                        <ion-icon name="calendar-outline" class="blog-calender"></ion-icon>
+                        <p class="blog-date">July 09, 2019</p>
+                    </div>
+                    <div class="blog-comment f-container">
+                        <ion-icon name="chatbubble-ellipses" class="post-comment"></ion-icon>
+                        <p class="comment-no">8</p>
+                    </div>
+                </div>
+            </div>
+            <div class="blog-container hidden">
+                <img src="Images/Rectangle 45.png" class="blog-image" alt="">
+                <h3 class="blog-title">15 Unique tourist attractions in India</h3>
+                <div class="blog-details f-container">
+                    <div class="blog-publish f-container">
+                        <ion-icon name="calendar-outline" class="blog-calender"></ion-icon>
+                        <p class="blog-date">Dec 08, 2018</p>
+                    </div>
+                    <div class="blog-comment f-container">
+                        <ion-icon name="chatbubble-ellipses" class="post-comment"></ion-icon>
+                        <p class="comment-no">3</p>
+                    </div>
+                </div>
+            </div>
+            <div class="blog-container hidden">
+                <img src="Images/Rectangle 38.png" class="blog-image" alt="">
+                <h3 class="blog-title">Five experiences in Kannur that you must not miss</h3>
+                <div class="blog-details f-container">
+                    <div class="blog-publish f-container">
+                        <ion-icon name="calendar-outline" class="blog-calender"></ion-icon>
+                        <p class="blog-date">Nov 12, 2019</p>
+                    </div>
+                    <div class="blog-comment f-container">
+                        <ion-icon name="chatbubble-ellipses" class="post-comment"></ion-icon>
+                        <p class="comment-no">3</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-cta" id="cta">
+        <div class="container text-center hidden">
+            <p class="subheading">Newsletter</p>
+            <h2 class="heading-secondary">Get delivered greatest news to your mailbox</h2>
+        </div>
+
+        <div class="newsletter-container container hidden">
+            <div class="newsletter-form">
+                <img src="Images/Newsletter Bacground Image.png" alt="" class="nB-Image">
+                <div class="overlay"></div>
+                <form action="#" class="newsletter-cta">
+                    <div class="cta-name">
+                        <label for="name" class="full-name">Full Name</label>
+                        <div class="f-container input-name">
+                            <input type="text" id="name" placeholder="Your Name" required>
+                            <ion-icon name="person-outline" class="person-icon"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="cta-email">
+                        <label for="email" class="full-email">Email Address</label>
+                        <div class="f-container input-email">
+                            <input type="email" id="email" placeholder="Your Email" required>
+                            <ion-icon name="mail-open-outline" class="email-icon"></ion-icon>
+                        </div>
+                    </div>
+                    <button>Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="section-footer">
+        <div class="footer container">
+            <div class="footer-container">
+                <img src="Images/Traveloma Logo.png" alt="" class="footer-logo">
+                <p class="footer-description">For athletes, high altitude produces two
+                    contradictory effects on performance. For
+                    explosive events (sprints up to 400 metres,
+                    long jump, triple jump).</p>
+            </div>
+
+            <div class="footer-container">
+                <div class="footer-heading">Address</div>
+                <ul class="footer-items">
+                    <li class="items">8502 Preston Rd. Inglewood, Maine 98380</li>
+                    <li class="items">contact.traveloma@gmail.com</li>
+                    <li class="items">229-555-01-09</li>
+                </ul>
+            </div>
+
+            <div class="footer-container">
+                <div class="footer-heading">Useful&nbsp;Links</div>
+                <ul class="footer-items">
+                    <li class="items items-link">Blog</li>
+                    <li class="items items-link">Newsletter</li>
+                    <li class="items items-link">Packages</li>
+                    <li class="items items-link">Testimonials</li>
+                </ul>
+            </div>
+            <div class="footer-container">
+                <div class="footer-heading">Company</div>
+                <ul class="footer-items">
+                    <li class="items items-link">Create account</li>
+                    <li class="items items-link">ios App</li>
+                    <li class="items items-link">Android App</li>
+                    <li class="items items-link">Sign In</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <section class="section-modal">
+        <div class="modal-body">
+            <div class="modal-image"></div>
+            <div class="modal-content">
+                <div class="modal-heading">
+                    <h2>Contact us</h2>
+                    <p>Want to know more about our travel plans and packages?</p>
+                </div>
+                <form action="#" class="modal-form">
+                    <div class="f-container modal-input-name">
+                        <input type="text" id="modal-name" placeholder="Your Name" required>
+                        <ion-icon name="person-outline" class="modal-person-icon"></ion-icon>
+                    </div>
+                    <div class="f-container modal-input-email">
+                        <input type="email" id="modal-email" placeholder="Your Email" required>
+                        <ion-icon name="mail-open-outline" class="modal-email-icon"></ion-icon>
+                    </div>
+                    <div class="f-container modal-input-message">
+                        <input type="tet" id="modal-message" placeholder="Your Message" required>
+                        <ion-icon name="chatbox-ellipses-outline" class="modal-message-icon"></ion-icon>
+                    </div>
+                    <button onclick="sendMessage()" class="modal-button submit-success">Send</button>
+                    <ion-icon name="close-outline" class="modal-close" onclick="closeModal()"></ion-icon>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="success-message">
+        <div class="message-success">
+            <p class="msg">Your message submitted Successfully.</p>
+            <p class="msg">We will contact you soon.</p>
+        </div>
+    </section>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script src="tilt.js"></script>
+    <script src="script.js"></script>
+    <script src="scroll.js"></script>
+</body>
+
+</html>
